@@ -111,7 +111,6 @@ const Header = () => {
           
           <div className="mt-auto text-white/60 text-sm">
             <p>Hotline: {siteContent.contact.phoneJapan1}</p>
-            <p>Email: contact@cargonhatviet.com</p>
           </div>
         </div>
       </div>

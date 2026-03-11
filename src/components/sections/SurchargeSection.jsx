@@ -53,7 +53,7 @@ const SurchargeSection = () => {
               
               <p className="text-slate-400 text-sm leading-relaxed mb-8 relative z-10">
                 Công ty từ chối phục vụ tất cả các hàng ăn cắp, hàng phạm pháp, hàng không rõ nguồn gốc, hàng cấm. 
-                Đối với hàng hóa có dấu hiệu tội phạm, công ty có thể bàn giao cho cơ quan chức năng giải quyết theo pháp luật.
+                Đối với hàng hóa có dấu hiệu tội phạm, công ty sẽ bàn giao cho cơ quan chức năng giải quyết theo pháp luật.
               </p>
               
               <h5 className="text-accent font-black text-lg mb-6 uppercase tracking-tight relative z-10">Các mặt hàng không thể thông quan:</h5>

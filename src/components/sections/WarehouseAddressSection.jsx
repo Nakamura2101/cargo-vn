@@ -38,7 +38,7 @@ const WarehouseAddressSection = () => {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Số điện thoại</p>
-                    <p className="text-xl font-bold text-primary">{siteContent.contact.phoneJapan1} / {siteContent.contact.phoneJapan2}</p>
+                    <p className="text-xl font-bold text-primary">{siteContent.contact.phoneJapan1}</p>
                   </div>
                 </li>
                 <li className="flex gap-4">

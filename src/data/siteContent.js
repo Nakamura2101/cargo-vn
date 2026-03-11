@@ -7,7 +7,6 @@ export const siteContent = {
     trackingLink: "https://ncjscs.com/login",
     fanpage: "https://facebook.com/cargonhatviet", // Placeholder
     phoneJapan1: "0476502268",
-    phoneJapan2: "08073565244",
     addressJapan: "千葉県富里市七栄880-34 Chiba-ken, Tomisato-shi, Nanae 880-34",
     zipJapan: "286-0221",
   },

@@ -65,11 +65,7 @@ const Footer = () => {
               </li>
               <li className="flex gap-3">
                 <Phone className="text-accent shrink-0" size={18} />
-                <span>{siteContent.contact.phoneJapan1} / {siteContent.contact.phoneJapan2}</span>
-              </li>
-              <li className="flex gap-3">
-                <Mail className="text-accent shrink-0" size={18} />
-                <span>contact@cargonhatviet.com</span>
+                <span>{siteContent.contact.phoneJapan1}</span>
               </li>
             </ul>
           </div>
