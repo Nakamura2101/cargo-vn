@@ -10,7 +10,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  // Base path for GitHub Pages (change if deploying to a subfolder)
+  // GitHub Pages with custom domain (cargo-vn.com) should use root base path
   base: '/',
   server: {
     host: '0.0.0.0',
