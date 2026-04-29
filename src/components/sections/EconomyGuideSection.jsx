@@ -2,8 +2,13 @@ import SectionBlock from '../ui/SectionBlock';
 import SectionBar from '../ui/SectionBar';
 import PageContainer from '../layout/PageContainer';
 import { BadgeCheck, AlertTriangle } from 'lucide-react';
+import { siteContent } from '../../data/siteContent';
 
 const EconomyGuideSection = () => {
+  const economyPrice = siteContent.pricing.find((item) => item.name === 'Gói Tiết Kiệm')?.price ?? '153.000 VND / 1kg';
+  const economyPriceShort = economyPrice.replace('.000 VND / 1kg', 'K');
+  const economyPriceBase = economyPrice.split(' ')[0];
+
   return (
     <SectionBlock className="bg-slate-50">
       <PageContainer>
@@ -19,7 +24,7 @@ const EconomyGuideSection = () => {
                 Best Value
               </span>
               <h3 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter">
-                Gói cước bay Tiết Kiệm - 135K
+                Gói cước bay Tiết Kiệm - {economyPriceShort}
               </h3>
               <div className="space-y-4 mb-10">
                 <div className="flex gap-3 items-center">
@@ -73,10 +78,10 @@ const EconomyGuideSection = () => {
           <div className="bg-accent p-8 rounded-3xl text-white shadow-xl shadow-red-500/20">
             <h4 className="text-xl font-bold mb-4">Lưu ý bảo hiểm</h4>
             <p className="text-white/80 text-sm leading-relaxed mb-6">
-              Phần bảo hiểm của gói tiết kiệm tương tự gói hỏa tốc nhưng thay giá vận chuyển mặc định thành 135k/kg để tính mức đền bù.
+              Phần bảo hiểm của gói tiết kiệm tương tự gói hỏa tốc nhưng thay giá vận chuyển mặc định thành {economyPriceShort.toLowerCase()}/kg để tính mức đền bù.
             </p>
             <div className="p-4 bg-white/10 rounded-xl border border-white/20 text-xs italic">
-              Đền bù mặc định = 135.000 x 4,35 x Cân nặng
+              Đền bù mặc định = {economyPriceBase} x 4,35 x Cân nặng
             </div>
           </div>
         </div>

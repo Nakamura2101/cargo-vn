@@ -3,6 +3,8 @@ import { motion } from 'motion/react';
 import { siteContent } from '../../data/siteContent';
 
 const HeroSection = () => {
+  const featuredPrice = siteContent.saleBanner.highlight.replace('ĐỒNG GIÁ ', '');
+
   return (
     <section className="relative h-screen min-h-[600px] flex items-center overflow-hidden">
       {/* Background Image */}
@@ -56,7 +58,7 @@ const HeroSection = () => {
       <div className="absolute bottom-0 left-0 right-0 bg-white/5 backdrop-blur-sm border-t border-white/10 hidden lg:block">
         <div className="container mx-auto px-4 py-8 grid grid-cols-4 gap-8">
           {[
-            { label: "Đồng giá", value: "158K/KG" },
+            { label: "Đồng giá", value: featuredPrice },
             { label: "Thời gian", value: "3-5 NGÀY" },
             { label: "Bảo hiểm", value: "100% GIÁ TRỊ" },
             { label: "Hỗ trợ", value: "24/7" }

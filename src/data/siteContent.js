@@ -26,7 +26,7 @@ export const siteContent = {
     items: [
       {
         title: "Giá cả cạnh tranh",
-        desc: "Đồng giá 158.000 đồng/kg",
+        desc: "Đồng giá 176.000 đồng/kg",
         icon: "CircleDollarSign"
       },
       {
@@ -48,7 +48,7 @@ export const siteContent = {
   },
   saleBanner: {
     title: "BIG SALE",
-    highlight: "ĐỒNG GIÁ 158K/KG",
+    highlight: "ĐỒNG GIÁ 176K/KG",
     desc: "Áp dụng cho mọi kiện hàng vận chuyển hỏa tốc từ Nhật về Việt Nam."
   },
   customerProcess: {
@@ -95,7 +95,7 @@ export const siteContent = {
       name: "Gói Hỏa Tốc",
       apply: "Áp dụng cho mọi kiện hàng",
       time: "3-5 ngày tính từ ngày hàng lên kho Chiba về Hà Nội",
-      price: "158.000 VND / 1kg",
+      price: "176.000 VND / 1kg",
       insurance: "Bảo hiểm mặc định theo giá vận chuyển hoặc theo giá trị hàng",
       isFeatured: true
     },
@@ -103,7 +103,7 @@ export const siteContent = {
       name: "Gói Tiết Kiệm",
       apply: "Chỉ áp dụng cho kiện hàng > 10kg (một số mặt hàng nhất định)",
       time: "7-10 ngày tính từ ngày hàng lên kho Chiba về Hà Nội (không tính ngày lễ hay thứ 7, CN)",
-      price: "135.000 VND / 1kg",
+      price: "153.000 VND / 1kg",
       insurance: "Bảo hiểm mặc định theo giá vận chuyển hoặc theo giá trị hàng",
       isFeatured: false
     }
@@ -116,7 +116,7 @@ export const siteContent = {
       },
       {
         type: "Bảo hiểm loại 2: mặc định",
-        details: "Phí bảo hiểm đã bao gồm trong giá cước vận chuyển 158k/kg. Trường hợp mất hàng (xác suất 1%) thì mặc định chỉ được đền bù số tiền bằng 4,35 lần tiền cước vận chuyển. Ví dụ: phí cước vận chuyển 2 triệu VND -> Đền bù 8,7 triệu VND."
+        details: "Phí bảo hiểm đã bao gồm trong giá cước vận chuyển 176k/kg. Trường hợp mất hàng (xác suất 1%) thì mặc định chỉ được đền bù số tiền bằng 4,35 lần tiền cước vận chuyển. Ví dụ: phí cước vận chuyển 2 triệu VND -> Đền bù 8,7 triệu VND."
       }
     ]
   },
