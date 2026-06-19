@@ -9,7 +9,7 @@ const ExpressGuideSection = () => {
       <PageContainer>
         <SectionBar 
           title="HƯỚNG DẪN GỬI HÀNG GÓI HỎA TỐC" 
-          subtitle="Chi tiết cách thức đóng gói và các gói bảo hiểm cho dịch vụ hỏa tốc."
+          subtitle="Chi tiết cách thức đóng gói và chính sách đền bù hàng hóa cho dịch vụ hỏa tốc."
         />
         
         <div className="space-y-16">
@@ -64,23 +64,33 @@ const ExpressGuideSection = () => {
           <div>
             <h4 className="text-xl font-bold text-primary mb-8 flex items-center gap-3">
               <span className="w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center text-sm">2</span>
-              Các gói bảo hiểm của gói hỏa tốc
+              {siteContent.insurance.title}
             </h4>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {siteContent.insurance.express.map((item, i) => (
+              {siteContent.insurance.articles.map((article, i) => (
                 <div key={i} className="bg-white p-8 rounded-3xl border-2 border-slate-100 shadow-sm hover:border-accent transition-colors">
-                  <h5 className="text-lg font-bold text-primary mb-4">{item.type}</h5>
-                  <p className="text-slate-600 text-sm leading-relaxed">{item.details}</p>
+                  <h5 className="text-lg font-bold text-primary mb-4">{article.title}</h5>
+                  <ul className="space-y-3">
+                    {article.points.map((point, j) => (
+                      <li key={j} className="flex gap-3 items-start text-slate-600 text-sm leading-relaxed">
+                        <div className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 shrink-0"></div>
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                  {article.example && (
+                    <div className="mt-4 p-4 bg-slate-50 rounded-xl border border-slate-100 text-xs italic text-slate-600">
+                      {article.example}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
 
             <div className="mt-8 p-6 bg-accent/5 rounded-2xl border border-accent/10">
               <p className="text-slate-700 text-sm leading-relaxed">
-                <strong className="text-accent">Lưu ý:</strong> Khi gửi hàng cần xác nhận bằng tin nhắn chọn bảo hiểm 1 hoặc 2. 
-                Nhắn tin <span className="font-bold text-accent">BH1</span> hoặc <span className="font-bold text-accent">BH2</span>. 
-                Nếu không nhắn tin, công ty mặc định gửi gói BH2.
+                <strong className="text-accent">Lưu ý:</strong> {siteContent.insurance.note}
               </p>
             </div>
           </div>

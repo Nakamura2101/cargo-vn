@@ -76,12 +76,12 @@ const EconomyGuideSection = () => {
           </div>
           
           <div className="bg-accent p-8 rounded-3xl text-white shadow-xl shadow-red-500/20">
-            <h4 className="text-xl font-bold mb-4">Lưu ý bảo hiểm</h4>
+            <h4 className="text-xl font-bold mb-4">Lưu ý đền bù</h4>
             <p className="text-white/80 text-sm leading-relaxed mb-6">
-              Phần bảo hiểm của gói tiết kiệm tương tự gói hỏa tốc nhưng thay giá vận chuyển mặc định thành {economyPriceShort.toLowerCase()}/kg để tính mức đền bù.
+              Gói tiết kiệm áp dụng chung chính sách đền bù của Cargo Nhật Việt: không bảo hiểm theo giá trị, không đền hàng vỡ/hỏng. Chỉ đền bù khi mất hàng hoàn toàn do lỗi vận chuyển, tối đa 03 lần tiền cước.
             </p>
             <div className="p-4 bg-white/10 rounded-xl border border-white/20 text-xs italic">
-              Đền bù mặc định = {economyPriceBase} x 4,35 x Cân nặng
+              Đền bù tối đa = {economyPriceBase} x 03 lần x Cân nặng
             </div>
           </div>
         </div>

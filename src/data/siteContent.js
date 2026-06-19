@@ -35,8 +35,8 @@ export const siteContent = {
         icon: "Clock"
       },
       {
-        title: "Chế độ bảo hiểm toàn diện",
-        desc: "Chế độ bảo hiểm hàng hóa đầy đủ, đảm bảo an toàn cho hàng hóa khách hàng",
+        title: "Chính sách đền bù rõ ràng",
+        desc: "Cam kết đền bù tối đa 03 lần tiền cước nếu hàng bị mất do lỗi vận chuyển, minh bạch và rõ ràng",
         icon: "ShieldCheck"
       },
       {
@@ -96,7 +96,7 @@ export const siteContent = {
       apply: "Áp dụng cho mọi kiện hàng",
       time: "3-5 ngày tính từ ngày hàng lên kho Chiba về Hà Nội",
       price: "176.000 VND / 1kg",
-      insurance: "Bảo hiểm mặc định theo giá vận chuyển hoặc theo giá trị hàng",
+      insurance: "Đền bù tối đa 03 lần tiền cước nếu mất hàng do lỗi vận chuyển",
       isFeatured: true
     },
     {
@@ -104,21 +104,56 @@ export const siteContent = {
       apply: "Chỉ áp dụng cho kiện hàng > 10kg (một số mặt hàng nhất định)",
       time: "7-10 ngày tính từ ngày hàng lên kho Chiba về Hà Nội (không tính ngày lễ hay thứ 7, CN)",
       price: "153.000 VND / 1kg",
-      insurance: "Bảo hiểm mặc định theo giá vận chuyển hoặc theo giá trị hàng",
+      insurance: "Đền bù tối đa 03 lần tiền cước nếu mất hàng do lỗi vận chuyển",
       isFeatured: false
     }
   ],
   insurance: {
-    express: [
+    title: "CHÍNH SÁCH ĐỀN BÙ HÀNG HÓA CỦA CARGO NHẬT VIỆT",
+    articles: [
       {
-        type: "Bảo hiểm loại 1: bảo hiểm theo giá trị",
-        details: "Phí bảo hiểm không bao gồm trong cước vận chuyển. Phí 1% giá trị hàng khai báo. Ví dụ: giá trị kiện hàng khai báo 10 man yen. Phí bảo hiểm (1%): 1 sen. Nếu hàng mất, khách được đền bù 10 man (100% giá trị kiện hàng)."
+        title: "Điều 1. Phạm vi áp dụng",
+        points: [
+          "Chính sách này áp dụng đối với tất cả các kiện hàng vận chuyển qua Cargo Nhật Việt."
+        ]
       },
       {
-        type: "Bảo hiểm loại 2: mặc định",
-        details: "Phí bảo hiểm đã bao gồm trong giá cước vận chuyển 176k/kg. Trường hợp mất hàng (xác suất 1%) thì mặc định chỉ được đền bù số tiền bằng 4,35 lần tiền cước vận chuyển. Ví dụ: phí cước vận chuyển 2 triệu VND -> Đền bù 8,7 triệu VND."
+        title: "Điều 2. Nguyên tắc đền bù",
+        points: [
+          "Cargo Nhật Việt không áp dụng bảo hiểm theo giá trị thực tế của hàng hóa đối với các kiện hàng thông thường.",
+          "Không có bảo hiểm cho hàng vỡ, hỏng, móp. Khách gửi hàng lên kho cần chủ động gia cố cẩn thận, chèn chống sốc, băng dính đầy đủ để tránh xảy ra sự cố không mong muốn.",
+          "Trường hợp hàng hóa bị mất hoàn toàn do lỗi của Cargo Nhật Việt, mức đền bù sẽ được tính theo tiền cước vận chuyển.",
+          "Mức đền bù tối đa bằng 03 (ba) lần tiền cước vận chuyển của phần hàng hóa bị mất."
+        ]
+      },
+      {
+        title: "Điều 3. Cách tính đền bù",
+        points: [
+          "Tiền đền bù = Tiền cước vận chuyển × 03 lần.",
+          "Tiền cước vận chuyển được tính theo trọng lượng tính cước của kiện hàng.",
+          "Không căn cứ vào giá trị mua bán, hóa đơn hoặc giá trị thị trường của hàng hóa."
+        ],
+        example: "Ví dụ: Tiền cước vận chuyển 2kg × 176.000 = 352.000 VNĐ. Mức đền bù tối đa: 352.000 × 03 = 1.056.000 VNĐ."
+      },
+      {
+        title: "Điều 4. Điều kiện đền bù",
+        points: [
+          "Hàng hóa bị mất hoàn toàn trong quá trình vận chuyển do lỗi của Cargo Nhật Việt.",
+          "Có mã vận đơn hoặc thông tin gửi hàng hợp lệ."
+        ]
+      },
+      {
+        title: "Điều 5. Các trường hợp không thuộc phạm vi đền bù",
+        points: [
+          "Hàng hóa thuộc danh mục cấm vận chuyển theo quy định của pháp luật.",
+          "Tiền mặt, vàng bạc, đá quý, giấy tờ có giá và các tài sản đặc biệt không được khai báo trước.",
+          "Thiệt hại do thiên tai, hỏa hoạn, chiến tranh, dịch bệnh hoặc các trường hợp bất khả kháng.",
+          "Hàng hóa hư hỏng do khách hàng đóng gói không đúng quy cách.",
+          "Hàng hóa dễ vỡ, dễ biến dạng hoặc dễ hư hỏng nhưng khách hàng không sử dụng dịch vụ đóng gói bảo vệ phù hợp."
+        ]
       }
-    ]
+    ],
+    note: "Việc sử dụng dịch vụ của Cargo Nhật Việt đồng nghĩa với việc khách hàng đã đọc, hiểu và đồng ý với chính sách đền bù nêu trên."
   },
   surcharges: [
     { category: "IPHONE", items: [
@@ -165,7 +200,7 @@ export const siteContent = {
   },
   faq: [
     { q: "Hàng bao lâu về?", a: "Tùy gói cước, Hỏa tốc từ 3-5 ngày, Tiết kiệm từ 7-10 ngày kể từ khi hàng lên kho Chiba." },
-    { q: "Có bảo hiểm không?", a: "Có 2 loại bảo hiểm: Bảo hiểm theo giá trị (1% phí) và Bảo hiểm mặc định (đã bao gồm trong cước)." },
+    { q: "Có bảo hiểm không?", a: "Cargo Nhật Việt không áp dụng bảo hiểm theo giá trị và không đền bù hàng vỡ/hỏng. Trường hợp mất hàng hoàn toàn do lỗi vận chuyển, mức đền bù tối đa bằng 03 lần tiền cước. Quý khách vui lòng gia cố, đóng gói cẩn thận trước khi gửi." },
     { q: "Gửi đồ điện tử được không?", a: "Được, nhưng sẽ có phụ phí riêng tùy loại thiết bị (iPhone, Laptop, iPad...)." },
     { q: "Khi nào thanh toán?", a: "Quý khách thanh toán cước vận chuyển quốc tế sau khi hàng đã về tới kho Việt Nam." },
     { q: "Có ship tỉnh không?", a: "Có, chúng tôi hỗ trợ gửi hàng qua các đơn vị vận chuyển nội địa như Viettel Post, EMS cho khách ở tỉnh." }

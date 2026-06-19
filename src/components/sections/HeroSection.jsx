@@ -60,7 +60,7 @@ const HeroSection = () => {
           {[
             { label: "Đồng giá", value: featuredPrice },
             { label: "Thời gian", value: "3-5 NGÀY" },
-            { label: "Bảo hiểm", value: "100% GIÁ TRỊ" },
+            { label: "Đền bù", value: "03 LẦN CƯỚC" },
             { label: "Hỗ trợ", value: "24/7" }
           ].map((stat, i) => (
             <div key={i} className="text-center border-r border-white/10 last:border-0">

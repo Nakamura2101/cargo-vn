@@ -37,7 +37,7 @@ const SaleBannerSection = () => {
               </div>
               <p className="text-sm leading-relaxed text-white/90">
                 Chúng tôi cung cấp giải pháp vận chuyển hỏa tốc với mức giá tốt nhất thị trường. 
-                Không giới hạn số lượng kiện hàng, hỗ trợ đóng gói và bảo hiểm đầy đủ.
+                Không giới hạn số lượng kiện hàng, hỗ trợ đóng gói cẩn thận cùng chính sách đền bù rõ ràng.
               </p>
               <button className="mt-8 w-full bg-white text-accent py-4 rounded-xl font-bold text-lg hover:bg-slate-100 transition-all shadow-xl">
                 NHẬN TƯ VẤN NGAY
