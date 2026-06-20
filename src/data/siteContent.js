@@ -96,7 +96,7 @@ export const siteContent = {
       apply: "Áp dụng cho mọi kiện hàng",
       time: "3-5 ngày tính từ ngày hàng lên kho Chiba về Hà Nội",
       price: "176.000 VND / 1kg",
-      insurance: "Đền bù tối đa 03 lần tiền cước nếu mất hàng do lỗi vận chuyển",
+      insurance: "Không bảo hiểm theo giá trị, không đền hàng vỡ/hỏng/móp. Trường hợp mất hàng hoàn toàn do lỗi vận chuyển: đền bù tối đa 03 lần tiền cước.",
       isFeatured: true
     },
     {
@@ -104,7 +104,7 @@ export const siteContent = {
       apply: "Chỉ áp dụng cho kiện hàng > 10kg (một số mặt hàng nhất định)",
       time: "7-10 ngày tính từ ngày hàng lên kho Chiba về Hà Nội (không tính ngày lễ hay thứ 7, CN)",
       price: "153.000 VND / 1kg",
-      insurance: "Đền bù tối đa 03 lần tiền cước nếu mất hàng do lỗi vận chuyển",
+      insurance: "Không bảo hiểm theo giá trị, không đền hàng vỡ/hỏng/móp. Trường hợp mất hàng hoàn toàn do lỗi vận chuyển: đền bù tối đa 03 lần tiền cước.",
       isFeatured: false
     }
   ],

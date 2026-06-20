@@ -38,7 +38,7 @@ const PricingTable = ({ items }) => {
               <div className="flex gap-3">
                 <Shield className="text-primary shrink-0" size={20} />
                 <div>
-                  <p className="font-bold text-slate-800 text-sm">Bảo hiểm</p>
+                  <p className="font-bold text-slate-800 text-sm">Chính sách đền bù</p>
                   <p className="text-slate-600 text-sm">{item.insurance}</p>
                 </div>
               </div>
